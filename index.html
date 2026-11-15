@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Resto Avenue | Le guide des restaurants à Montpellier, Nîmes, Béziers, Perpignan et Toulouse</title>
+    <meta
+      name="description"
+      content="Resto Avenue, le guide des restaurants d'Occitanie : adresses, bons plans, vidéos, recettes de chefs et portraits à Montpellier, Nîmes, Béziers, Perpignan et Toulouse."
+    />
+    <link rel="canonical" href="https://www.resto-avenue.fr/" />
+    <meta name="theme-color" content="#f6efe4" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.resto-avenue.fr/" />
+    <meta property="og:site_name" content="Resto Avenue" />
+    <meta property="og:title" content="Resto Avenue | Les bonnes tables d'Occitanie, ville par ville" />
+    <meta
+      property="og:description"
+      content="Le guide des restaurants de Montpellier, Nîmes, Béziers, Perpignan et Toulouse : adresses, bons plans, vidéos, recettes de chefs et portraits."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        var ok = false;
+        try {
+          var c = document.createElement('canvas');
+          ok = !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl')));
+        } catch (e) {}
+        if (ok && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.documentElement.classList.add('has-3d');
+        }
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Resto Avenue",
+        "url": "https://www.resto-avenue.fr/",
+        "email": "media@networld-media.fr",
+        "telephone": "+33621566110",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "11 rue des Peupliers",
+          "postalCode": "34970",
+          "addressLocality": "Lattes",
+          "addressCountry": "FR"
+        },
+        "sameAs": ["https://www.instagram.com/resto_avenue/"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#villes">Aller aux villes</a>
+
+    <canvas id="scene" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="topbar__logo" href="#accueil" aria-label="Resto Avenue, retour en haut de page"><!--LOGO--></a>
+      <a class="btn btn--small" href="#contact">Contact</a>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero__content">
+          <p class="eyebrow">Le guide des restaurants d'Occitanie</p>
+          <h1>Les bonnes tables d'Occitanie, <em>ville par ville.</em></h1>
+          <p class="hero__lead">Montpellier, Nîmes, Béziers, Perpignan, Toulouse : trouvez où manger près de chez vous.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#villes">Choisir ma ville</a>
+            <a class="btn btn--ghost" href="#restaurateurs">Je suis restaurateur</a>
+          </div>
+        </div>
+        <p class="hero__hint" aria-hidden="true"><span></span>Faites défiler pour prendre la route</p>
+      </section>
+
+      <section class="trip" id="villes" aria-labelledby="villes-titre">
+        <div class="trip__sticky">
+          <h2 class="trip__title" id="villes-titre">Cinq villes, une même route</h2>
+
+          <ol class="trip__rail" aria-label="Étapes du voyage">
+            <li><button type="button" data-stop="0"><span>Nîmes</span></button></li>
+            <li><button type="button" data-stop="1"><span>Montpellier</span></button></li>
+            <li><button type="button" data-stop="2"><span>Béziers</span></button></li>
+            <li><button type="button" data-stop="3"><span>Perpignan</span></button></li>
+            <li><button type="button" data-stop="4"><span>Toulouse</span></button></li>
+          </ol>
+
+          <div class="trip__cards">
+            <article class="city" data-city="0">
+              <p class="city__index">Étape 1 sur 5</p>
+              <h3>Nîmes</h3>
+              <p class="city__tag">Des Arènes aux Jardins de la Fontaine.</p>
+              <a class="btn" href="https://nimes.resto-avenue.fr">Les restaurants à Nîmes <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="city" data-city="1">
+              <p class="city__index">Étape 2 sur 5</p>
+              <h3>Montpellier</h3>
+              <p class="city__tag">De l'Écusson à Port Marianne.</p>
+              <a class="btn" href="https://montpellier.resto-avenue.fr">Les restaurants à Montpellier <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="city" data-city="2">
+              <p class="city__index">Étape 3 sur 5</p>
+              <h3>Béziers</h3>
+              <p class="city__tag">Des allées Paul-Riquet aux bords de l'Orb.</p>
+              <a class="btn" href="https://beziers.resto-avenue.fr">Les restaurants à Béziers <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="city" data-city="3">
+              <p class="city__index">Étape 4 sur 5</p>
+              <h3>Perpignan</h3>
+              <p class="city__tag">Du Castillet aux tables catalanes.</p>
+              <a class="btn" href="https://perpignan.resto-avenue.fr">Les restaurants à Perpignan <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="city" data-city="4">
+              <p class="city__index">Étape 5 sur 5</p>
+              <h3>Toulouse</h3>
+              <p class="city__tag">Du Capitole aux bords de Garonne.</p>
+              <a class="btn" href="https://toulouse.resto-avenue.fr">Les restaurants à Toulouse <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+
+          <p class="trip__leg" aria-hidden="true"></p>
+        </div>
+      </section>
+
+      <section class="curtain" aria-hidden="true">
+        <p>Et si la prochaine adresse,<br /><em>c'était la vôtre&nbsp;?</em></p>
+      </section>
+
+      <section class="pro" id="restaurateurs" aria-labelledby="pro-titre">
+        <div class="pro__sticky">
+          <div class="pro__scrim"></div>
+
+          <div class="pro__intro">
+            <p class="eyebrow">Restaurateurs</p>
+            <h2 id="pro-titre">On vient filmer <em>chez vous.</em></h2>
+            <p>
+              Depuis 2015, notre équipe va sur le terrain pour mettre en valeur vos produits, votre
+              savoir-faire et votre salle.
+            </p>
+          </div>
+
+          <div class="finder" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+            <span class="finder__rec">REC</span>
+            <span class="finder__info">Vidéo découverte · prise 1</span>
+          </div>
+
+          <div class="pro__offer">
+            <article class="shot">
+              <div class="shot__photo" aria-hidden="true">
+                <span class="shot__play"></span>
+              </div>
+              <div class="shot__body">
+                <p class="eyebrow">Le service phare</p>
+                <h3>La vidéo découverte</h3>
+                <p>On pousse votre porte, on filme, on goûte : un clip court qui donne envie de réserver.</p>
+              </div>
+            </article>
+
+            <div class="extras">
+              <p>Et aussi <span class="extras__hint extras__hint--hover">· survolez un service</span><span class="extras__hint extras__hint--touch">· touchez un service</span></p>
+              <ul aria-label="Les autres services Resto Avenue">
+                <li><button type="button" class="extra is-active" aria-pressed="true" data-info="Votre restaurant référencé dans le guide de votre ville, classé par thèmes et par quartiers.">Page dans le guide</button></li>
+                <li><button type="button" class="extra" aria-pressed="false" data-info="Votre histoire et votre savoir-faire, racontés par notre équipe.">Portrait</button></li>
+                <li><button type="button" class="extra" aria-pressed="false" data-info="Un de vos plats signature publié en recette, à refaire à la maison.">Recette de chef</button></li>
+                <li><button type="button" class="extra" aria-pressed="false" data-info="Vos promos, vos évènements et vos actualités relayés auprès des internautes.">Bons plans</button></li>
+                <li><button type="button" class="extra" aria-pressed="false" data-info="Une table chez vous à gagner, chaque dimanche sur notre Instagram.">Jeu-concours</button></li>
+                <li><button type="button" class="extra" aria-pressed="false" data-info="Vos produits mis en avant et vendus en Click &amp; Collect.">Marketplace</button></li>
+              </ul>
+              <p class="extras__detail" aria-live="polite">Votre restaurant référencé dans le guide de votre ville, classé par thèmes et par quartiers.</p>
+            </div>
+          </div>
+
+          <div class="pro__outro">
+            <p class="pro__door">Poussez la porte.</p>
+          </div>
+
+          <div class="flash" aria-hidden="true"></div>
+          <div class="pro__fade" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-titre">
+        <div class="contact__stage">
+          <div class="contact__sticky">
+            <div class="contact__head">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-titre">Parlons de <em>votre restaurant.</em></h2>
+              <p class="contact__hint">Choisissez un point pour nous joindre.</p>
+            </div>
+            <ul class="spots">
+              <li>
+                <a class="spot" data-spot="spot_phone" href="tel:+33621566110">
+                  <span class="spot__dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.500a2 2 0 0 1 2-2z"/></svg></span>
+                  <span class="spot__text"><strong>Appeler</strong><small>06 21 56 61 10</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="spot" data-spot="spot_mail" href="mailto:media@networld-media.fr?subject=Mon%20restaurant%20sur%20Resto%20Avenue">
+                  <span class="spot__dot"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.500" width="18" height="13" rx="2"/><path d="m3.500 7.500 8.500 6 8.500-6"/></svg></span>
+                  <span class="spot__text"><strong>Écrire</strong><small>media@networld-media.fr</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="spot" data-spot="spot_insta" href="https://www.instagram.com/resto_avenue/" target="_blank" rel="noopener">
+                  <span class="spot__dot"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.6"/></svg></span>
+                  <span class="spot__text"><strong>Instagram</strong><small>@resto_avenue</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="spot" data-spot="spot_map" href="https://www.google.com/maps/search/?api=1&query=11+rue+des+Peupliers+34970+Lattes" target="_blank" rel="noopener">
+                  <span class="spot__dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500a7 7 0 0 0-14 0C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+                  <span class="spot__text"><strong>Nous trouver</strong><small>11 rue des Peupliers, Lattes</small></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span class="footer__logo"><!--LOGO--></span>
+          <ul class="footer__cities" aria-label="Les sites des villes">
+            <li><a href="https://montpellier.resto-avenue.fr">Montpellier</a></li>
+            <li><a href="https://nimes.resto-avenue.fr">Nîmes</a></li>
+            <li><a href="https://beziers.resto-avenue.fr">Béziers</a></li>
+            <li><a href="https://perpignan.resto-avenue.fr">Perpignan</a></li>
+            <li><a href="https://toulouse.resto-avenue.fr">Toulouse</a></li>
+          </ul>
+          <p class="footer__partners">
+            En partenariat avec City Shopping, France Bleu Hérault et Metro.
+          </p>
+          <p class="footer__legal">© 2026 NetWorld Media. Tous droits réservés.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
