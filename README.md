@@ -10,7 +10,7 @@ npm install
 npm run dev      # développement, http://localhost:5173
 npm run build    # site statique dans dist/
 npm run preview  # sert dist/ en local
-npm run shots    # captures de contrôle (Chrome requis), voir scripts/shots.mjs
+npm run shots    # captures de contrôle (installe puppeteer-core à la volée, Chrome requis)
 ```
 
 ## Organisation

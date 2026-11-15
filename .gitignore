@@ -1,4 +1,11 @@
 node_modules
 dist
 shots
-*.blend1
+.DS_Store
+*.log
+
+# Fichiers Blender régénérables par les scripts build_*.py
+assets-src/blender/*.blend
+assets-src/blender/*.blend1
+assets-src/blender/previews/
+__pycache__/
